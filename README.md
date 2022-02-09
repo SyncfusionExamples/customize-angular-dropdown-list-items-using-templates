@@ -1,0 +1,2 @@
+# customize-angular-dropdown-list-items-using-templates
+A quick start Angular project that shows how to customize the Angular Dropdown List of Syncfusion using built-in template option. This project also includes a code snippet to customize the Angular Dropdown List items as well as selected value, add header and footer for the Dropdown List popup, customize the Dropdown List group title and no records template.
