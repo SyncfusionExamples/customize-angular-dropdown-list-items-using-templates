@@ -1,0 +1,39 @@
+<div>
+  <div  style="margin:10% 40%; width:250px">
+    <ejs-dropdownlist  [dataSource]='data' [fields]='dataFields'         
+      placeholder='Select a name'>   
+      <ng-template #itemTemplate let-data>
+        <div>
+          <img class="empImage"
+           src="assets/dropdonwlist/employee/{{data.Image}}.png" alt="employee" />
+          <div class="ename"> {{data.Name}} </div>
+        </div>
+    </ng-template>
+    <ng-template #headerTemplate>
+      <div class="header"> 
+        <span>Photo</span> 
+        <span class="info">Employee Name</span></div>
+  </ng-template>
+  <ng-template #footerTemplate>
+    <div class="footer">
+      <span>Total list items: 8 </span>
+  </div>
+</ng-template>
+<ng-template #valueTemplate let-data>
+  <div>
+    <img class="value"
+    src="assets/dropdonwlist/employee/{{data.Image}}.png" alt="employee"
+    height="23px" width="23px"/>
+      <div class="name"> {{data.Name}} </div>
+  </div>
+</ng-template>
+<ng-template #groupTemplate let-data>
+  <b><i>{{data.Country}}</i></b>
+</ng-template>
+<ng-template #noRecordsTemplate>
+  <span> NO DATA AVAILABLE</span>
+</ng-template>
+     </ejs-dropdownlist>
+  </div>   
+</div>
+
